@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤 룰렛</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>랜덤 룰렛</h1>
+        
+        <!-- 항목 입력 -->
+        <textarea id="items" placeholder="항목을 입력하세요 (쉼표로 구분)"></textarea>
+        
+        <!-- 이미지 업로드 -->
+        <input type="file" id="images" multiple accept="image/*">
+        
+        <!-- 룰렛과 버튼 -->
+        <div class="roulette-wrapper">
+            <div class="arrow"></div>
+            <canvas id="roulette" width="600" height="600"></canvas>
+        </div>
+        <button id="spin-button">룰렛 돌리기</button>
+        
+        <!-- 결과 표시 -->
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('F1E776AA-8F09-4E6E-B6EF-C078D37C803F.jpg'), url('F1E776AA-8F09-4E6E-B6EF-C078D37C803F.jpg'); /* 동일한 이미지 2개 */
+            background-position: left top, right top; /* 왼쪽과 오른쪽 상단에 이미지 위치 */
+            background-repeat: no-repeat, no-repeat; /* 이미지 반복 방지 */
+            background-size: 50% 100%; /* 각 이미지가 화면의 50% 너비와 100% 높이를 차지 */
+            background-color: #f0f4f8; /* 중앙 배경색 설정 */
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+    
+h1 {
+    color: #ff0101;
+    font-size: 7em;
+    font-weight: bold;  
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 1em;
+}
+
+input[type="file"] {
+    margin: 10px 0;
+}
+
+.roulette-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+canvas {
+    border: 10px solid #333;
+    border-radius: 50%;
+}
+
+.arrow {
+    position: absolute;
+    top: 625px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid red;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    font-size: 4em;          /* 글자 크기 설정 (예: 2em) */
+    color: #00fb08;          /* 글자 색상 설정 (예: 주황색) */
+    font-weight: bold;       /* 글자 두께 설정 (굵게) */
+    margin-top: 20px;        /* 상단 여백 설정 */
+    text-shadow: 2px 2px 5px rgba(55, 55, 55, 0.3); /* 텍스트 그림자 (선택 사항) */
+}
